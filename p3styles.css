@@ -1,0 +1,221 @@
+/*<!-------w-----------
+
+    Project 3: p3styles.css
+    Name: Belen	Gamez-Delgado
+    Date: April 21, 2022
+    Description: This project is a demonstration for the requirements for project 3.
+	
+-------------------->*/
+
+*
+{
+    font-family: verdana, sans-serif;
+    width: 100%;   
+    background-color: #FAF6F2;
+}
+
+body
+{
+    max-width: 1800px;
+    min-width: 1500px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Navigation links */
+.mainNavigation a
+{
+    padding: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    width: 23%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.mainNavigation a:hover
+{
+    background-color: #DED1BD;/*rgb(201, 199, 199);*/
+}
+
+.mainNavigation-link-fade-up:hover::before 
+{
+    bottom: 10px;
+    opacity: 1;
+}
+
+.mainNavigation a.active
+{
+    background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) 
+{
+    .navbar a 
+    {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; 
+    }
+}
+
+.welcome
+{
+    text-align: center;
+}
+
+/* index.html */
+.mainImage
+{
+    width: 100%;
+    position:relative;
+}
+
+.welcome
+{
+    margin: auto;
+}
+
+.facts
+{
+	background:#eaeae9;
+    width: 60%;
+    padding: 20px 30px 20px 300px;
+    margin: auto;
+    background-color: #FAF6F2;
+}
+
+ul
+{
+    list-style-image: url("images\\coconut.png");
+    display: inline-block;
+}
+
+.mainContainer
+{
+    display: inline-flex;
+}
+
+/* ElSalvadorLocation.html */
+.locateMain
+{
+	width: 750px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #FAF6F2
+}
+
+.mapImage
+{
+    height: 200px;
+    width: 100%;
+}
+
+/* SightsToSee.html */
+.sightImage
+{
+    width: 100%;
+    height: 60%;
+    display: block;
+    margin: auto;
+    padding-bottom: 1px;
+    border-radius: 2% 2% 0% 0%;
+}
+
+.left, .middle, .right
+{
+    border:3px #111 solid;
+    border-radius: 2%;
+    height: 100%;
+    width: 28%;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+}
+
+.right
+{
+    position: absolute;
+    left: 66.66%; 
+}
+
+.middle
+{
+    position: absolute;
+    right: 38%;
+}
+
+.left
+{
+    position: absolute;
+    left: 0%;
+}
+
+.container
+{
+    height: 350px;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+footer
+{
+    clear: both; 
+    text-align: center;
+    width: 100%;
+    height: 1.5rem;
+    margin-bottom: 0%;
+    align-content: center;
+    font-weight: small;
+}
+
+.finalNavigation
+{
+    margin-bottom: 0%;
+}
+
+.finalNavigation li
+{
+    text-decoration: none;
+    display: contents;
+    padding: 0%;
+    align-content: center;
+}
+
+.finalNavigation ul
+{
+    margin-bottom: 0%;
+    margin-left: -50px;
+}
+
+.finalNavigationLocation
+{
+    margin-top: 15%;
+}
+
+.finalNavigationLocation ul
+{
+    margin-bottom: 0%;
+    margin-left: -50px;
+}
+
+.finalNavigationLocation li
+{
+    text-decoration: none;
+    display: contents;
+    padding: 0%;
+    align-content: center;
+}
+
