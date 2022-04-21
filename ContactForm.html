@@ -1,0 +1,77 @@
+<!-------w-----------
+
+    Project 3: Contact Form
+    Name: Belen	Gamez-Delgado
+    Date: April 21, 2022
+    Description: This project demonstrates how to use Regular Expressions in a form for Project 3.
+	
+-------------------->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="ContactForm.js"></script>
+		<link rel="stylesheet" type="text/css" href="ContactForm.css"/>
+		<meta charset="utf-8" />
+		<title>Contact</title>
+	</head>
+	<body>
+        <header class="mainNavigation">
+			<a href="index.html" class="home">Home</a>
+			<a href="ElsalvadorLocation.html" class="location">Location</a>
+			<a href="SightsToSee.html" class="sights">Sights</a>
+			<a href="ContactForm.html" class="contact">Contact Us</a>
+		</header>
+
+		<main id="content">
+			<form id="regEx" method="post" 
+							 action="http://symlink.dk/code/php/submit/">
+				<fieldset>
+					<legend><b>Contact Information</b></legend>
+					<ol>
+						<li class="formField">
+							<label for="fullname">Full Name: </label>
+							<input type="text" autofocus id="fullname" name="fullname" />
+							<div class="error" id="fullname_error">*Invalid name</div>
+						</li>
+						<li class="formField">
+							<label for="email">E-mail: </label>
+							<input type="email" id="email" name="email" />
+							<div class="error" id="email_error">*The email entered is invalid</div>
+						</li>
+						<li class="formField">
+							<label for="phone">Phone number:</label>
+							<input type="tel" id="phone" name="phone" />
+							<div class="error" id="phone_error">*The Phone number is invalid</div>
+						</li>
+					</ol>
+				</fieldset>	
+                
+                <fieldset class = "commentSection">
+					<legend><b>Comments</b></legend>
+					
+					<textarea id="feedback" name="feedback" rows="6" cols="60"></textarea>
+				</fieldset>
+                
+				<aside>
+					<button id="submitButton" type="submit">Submit</button>
+                    <input type="reset" value="Reset"/>
+				</aside>
+			</form>
+
+			<footer>
+				<nav class="finalNavigation">
+					<ul>
+						<li><a href="index.html"><small>Home</small></a></li>
+						<li><a href="ElsalvadorLocation.html"><small>Location</small></a></li>
+						<li><a href="SightsToSee.html"><small>Sights</small></a></li>
+						<li><a href="ContactForm.html"><small>Contact Us</small></a></li>
+					</ul>
+				</nav>
+					<small>
+						Copyright &copy; 
+						<a href="#">2022 Library of Belen</a>
+					</small>
+			</footer>
+		</main>
+	</body>
+</html>
